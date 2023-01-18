@@ -4,7 +4,7 @@ import statistics
 
 class SimpleReport:
     @classmethod
-    def generate(self, list):
+    def generate(cls, list):
         fabric = min(
             [product["data_de_fabricacao"] for product in list]
         )

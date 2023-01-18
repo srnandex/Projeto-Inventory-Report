@@ -4,7 +4,7 @@ from collections import Counter
 
 class CompleteReport(SimpleReport):
     @classmethod
-    def generate(self, list):
+    def generate(cls, list):
         simple = SimpleReport.generate(list)
         products = Counter(item['nome_da_empresa'] for item in list)
         stored = ''
